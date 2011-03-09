@@ -4,6 +4,8 @@ This is a version of the Year in Review app running on linkedinlabs.
 
 It uses the LinkedIn developer APIs to show you your connections who started jobs in different years.
 
+(ui design and javascript by Moses Ting.)
+
 h3. Instructions
 
 1. Install Ruby on Rails 3.0 on your computer: http://rubyonrails.org/download
