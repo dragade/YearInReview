@@ -1,0 +1,77 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/gradient";
+
+$borderColor: #888;
+$hello-world-height: 50px;
+
+body {font-size:100%;}
+h1 {font-size:2.5em;}
+h2 {font-size:1.875em;}
+p {font-size:0.875em;}
+
+.demo {
+	padding: 20px;
+	margin: 20px;
+	h1 {
+		font-weight: bold;
+		font-size: 2.5em;
+		margin: 10px 0 0;
+	}
+	p {
+		font-style: italic;
+		margin: 5px 0 15px;
+	}
+}
+
+#hello-world {
+  @include linear-gradient(color-stops(white 46%, #EFEFEF 95%)); 
+  @include border-radius(5px, 5px);
+  @include box-shadow($borderColor, 1px, 1px, 8px, 0, false);
+	height: $hello-world-height;
+	line-height: $hello-world-height;
+	width: 200px;
+	text-align: center;	 	
+}
+
+.icon-new {
+	background: sprite-image('icon/new.png') no-repeat;
+}
+.icon-edit {
+  background: sprite-image('icon/edit.png') no-repeat;
+}
+.icon-save {
+  background: sprite-image('icon/save.png') no-repeat;
+}
+
+.button {
+	padding-left: 20px;
+	margin: 10px;
+}
+
+.profile {
+	margin: 10px;
+	width: 500px;
+	overflow: auto;
+	img {
+		float: left;
+	}
+	.details {
+		float: left;
+		margin-left: 15px;
+		padding-top: 20px;
+		.name {
+			font-weight: bold;
+			font-size: 18px;
+		}
+		.headline {
+			color: #444;
+		}
+	}
+}

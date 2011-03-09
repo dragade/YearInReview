@@ -1,0 +1,266 @@
+/* 
+ * Landing Page CSS 
+ */
+
+#landing {
+	background:			url(../images/li_splash.jpg) #fff top left no-repeat;
+}
+
+/***** Plug from CNN */
+
+#landing #plug {
+	font-family:		Georgia;
+	margin:				10px 0 10px 0;
+}
+
+#landing span.quote {
+	display:			block;
+	font-size:			1em;
+	margin-top:			10px;
+    margin-bottom:	    5px;
+}
+#landing span.source {
+	display:			block;
+	vertical-align:		top;
+	margin-left:		200px;
+    font-size:			0.875em;
+}
+
+#landing img#cnnlogo {
+	height:				16px;
+	vertical-align:		middle;
+}
+
+
+/***** Main Content */
+#app {
+	margin-top:			10px;
+	margin-bottom:		50px;
+}
+#landing h1 {
+	font-size:			2.3em;
+}
+#landing p.copy {
+	margin-top:			5px;
+	margin-bottom:		15px;
+	width:				360px;
+	line-height:		1.3;
+}
+
+
+/***** Login Form */
+#landing #login #submit {
+	vertical-align:		middle;
+	padding-bottom:		5px;	
+}
+
+
+/***** Sharing */ 
+#landing #sharing {
+	text-align:			center;
+}
+div.linkedin, div.facebook, div.twitter {
+	display:			inline-block;
+	position:			relative;
+	padding:			0 3px;
+    vertical-align:     top;
+}
+
+/***** Eggs */
+
+#landing #egg1bg,
+#landing #egg2bg,
+#landing #egg3bg {
+	background-color:	#FFF;
+	width:				60px;
+	height:				60px;
+	z-index:			5;	
+}
+#landing #egg1bg,
+#landing #egg1 {
+	position:			absolute;
+	top:				780px;
+	left:				780px;
+	z-index:			6;
+}
+#landing #egg2bg,
+#landing #egg2,
+#landing #egg3bg,
+#landing #egg3 {
+	position:			absolute;
+	top:				-100px;
+	left:				-100px;
+	z-index:			6;
+}
+#landing #identity {
+	position:			absolute;
+	background-color:	#FFF;
+	top:				-100px;
+	left:				-100px;
+	z-index:			6;
+	height:				60px;
+	width:				190px;
+	vertical-align:		middle;
+	font-size:			12pt;
+	font-weight:		bold;
+	color:				#333;
+	font-family:		Arial;
+}
+
+
+
+/* 
+ * Interactive Page CSS
+ */
+#yir {
+	font-family:		Arial;
+	font-size:			10pt;
+	line-height:		1.4em;
+}
+
+/***** Header */
+#header {
+	margin:				0 auto;	
+	width:				675px;	
+}
+#header #headline {	
+	margin-top:			30px;
+	float:				left;
+}
+#header h1 {
+	text-align:			left;
+	margin-bottom:		6px;
+}
+#header p {
+	font-size:			1.1em;
+	width:				490px;
+}
+#header #years {
+	float:				right;
+}
+#header ul {}
+#header ul > li.year {
+	display:			inline-block;
+}
+#header ul > li.active {
+	background-color:	#333;
+	color:				#FFF;
+}
+#header ul a {
+	display:			inline-block;
+	padding:			55px 12px 10px;	
+	color:				#333;
+	text-decoration:	none;
+}
+#header ul a:hover {
+	color:				#FFF;
+	background-color:	#333;
+}
+#header li.active a {
+	color:				#FFF;	
+}
+
+/***** YIR Container */
+#yir-container {
+	width:				675px;
+    padding:            0 5px;
+    margin:             0 auto;
+	margin-top:			10px;
+}
+#pages {
+	text-align:			right;
+	height:				18px;
+	padding:			0 5px 8px 0;
+}
+#pages ul > li {
+	display:			inline-block;
+	font-size:			.9em;
+}
+#pages a {	
+	border:				1px solid #DDD;
+	padding:			4px 8px;
+	color:				#333;
+	text-decoration:	none;
+}
+#pages a:hover {
+	border:				1px solid #000;
+	background-color:	#000;
+	color:				#FFF;
+}
+
+div.imageblock,
+div.breather3,
+div.breather2 {
+    float:          	left;
+	margin:             0 5px 5px 0;
+}
+div.imageblock {
+	background-color:   #FFF;	
+	width:              70px;
+	height:				70px;
+	text-align:			center;
+}
+div.imageblock img {
+	height:				70px;
+	width:				70px;
+}
+div.imageblock:hover {
+	-moz-box-shadow: 0 0 5px #666;
+	-webkit-box-shadow: 0 0 5px #666;
+	box-shadow: 0 0 5px #666;
+}
+div.breather2,
+div.breather3 {
+	background:         url(../images/gradient_bg.png) repeat-x scroll top left #069;
+	text-align:			right;
+	font-family:		arial;
+	font-weight:		normal;
+	height:				70px;
+}
+div.breather3 {
+	width:              220px;
+}
+div.breather2 {
+    width:              145px;
+}
+table.breather-content {
+	color:				#FFF;	
+}
+table.breather-content a {
+	color:				#FFF;
+	text-decoration:	none;
+}
+td.line {
+	width:				99%;
+	height:				68px;
+	text-align:			right;
+	padding-left:		5px;
+}
+td.pointer {
+	padding:			0 7px 3px 5px;
+	font-size:			1.6em;
+	vertical-align:		middle;
+}
+
+/***** Sharing on YIR */
+#yir #sharing {
+	margin-top:			15px;
+	text-align:			center;	
+}
+#yir #copyright {
+	text-align:			center;
+	font-size:			.9em;
+	font-color:			#666;
+}
+
+/***** Language Selection */
+#language-selection {
+	position: 			absolute;
+	right:				0;
+	top:				0;
+	padding:			6px 6px;
+	font-family:		Arial;
+	font-size:			10pt;
+	background:			url(../images/bg_pixel80.png) repeat;
+    z-index:            10;
+}

@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  title: "LinkedIn Year in Review"
+  fortune: "Fortune called it:"
+  best: "The best networking email you'll get all year"
+  now: "See all your connections who started their jobs in 2011, 2010, or 2009."
+#  see_who_started: "See who started their current jobs in 2011, 2010, or 2009."
+  reconnect: "Reconnect with people in your network."
+  make_mine: "Log in and see yours!"
+  your_conns: "%{fname}, %{num} of your connections started something new in %{year}."
+  see_job: "What's %{fname} doing?"
+  where_is: "Where is %{fname}?"
+  and_x: "And %{fname}?"
+  tell: "Tell your friends."
+  previous: "« previous"
+  next: "next »"
+  year_in_review: "LinkedIn Year in Review"
+  sorry: "Sorry! None of your connections changed jobs in %{year}."
+
+
+  copy: "See who got promoted, changed jobs, or started something interesting in 2011, 2010, or 2009."
+  quote_heading: "“Best networking opportunity” of the year."
+  article: "Article"
+  by: "by"
+  read_more_on: "Read more on"

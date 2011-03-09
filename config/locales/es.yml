@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  accents: "á í ñ ó ¿"
+  hello: "Hola"
+  title: "Repaso del año con LinkedIn"
+  fortune: "Fortune lo nombró:"
+  best: "El mejor correo electrónico sobre su red de contactos que recibirá durante todo el año"
+  now: "Vea a todos sus colegas quienes empezaron puestos en 2011, 2010, o 2009."
+  #see_who_started: "Vea quienes comenzaron sus puestos en 2011, 2010 o 2009."
+  reconnect: "Reconéctese con la gente en su red."
+  make_mine: "Ingrese y vea el suyo!"
+  your_conns: "%{fname}, %{num} de sus contactos empezaron un nuevo puesto en %{year}."
+  see_job: "¿Que hace %{fname}?"
+  where_is: "¿Donde está %{fname}?"
+  and_x: "¿Y %{fname}?"
+  tell: "Pase la voz."
+  previous: "« anterior"
+  next: "siguiente »"
+  year_in_review: "Repaso del año con LinkedIn"
+  sorry: "Sorry! None of your connections changed jobs in %{year}."
+
+  copy: "Vea a todos sus colegas quienes empezaron puestos en 2011, 2010, o 2009."
+  quote_heading: "“La mejor opportunidad sobre su red de contactos” del año"
+  article: "Artículo"
+  by: "por"
+  read_more_on: "Lea más en"

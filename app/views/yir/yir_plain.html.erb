@@ -1,0 +1,150 @@
+<body id="yir">
+    <div id="language-selection">
+        <% if @locale == "en" then %>
+            <%= link_to "Español", {:controller => "yir", :action => "yir_plain", :locale => "es", :year=>@year}, :method => :get %>
+        <% else %>
+            <%= link_to "English", {:controller => "yir", :action => "yir_plain", :locale => "en", :year=>@year}, :method => :get %>
+        <% end %>
+    </div>
+
+	<div id="header">
+
+		<div id="headline">
+			<h1>
+                <% if @locale == "es" then %>
+                    <a href="/?locale=<%=@locale%>&year=2010"><img src="/images/yirlogo2sm_es.png" alt="<%=t :year_in_review%>"/></a>
+                <% else %>
+                    <a href="/?locale=<%=@locale%>&year=2010"><img src="/images/yirlogo2sm.png" alt="<%=t :year_in_review%>"/></a>
+                <% end %>
+			</h1>
+			<p>
+				<%=t :your_conns, :fname => @first_name, :num => @total_num_job_changers, :year => @year %>
+			</p>			
+		</div>
+		<div id="years">
+			<ul>				
+			    <% if @year != 2011 %>
+					<li class="year">
+			        	<%= link_to "2011", {:controller => "yir", :action => "yir_plain", :year => 2011, :locale => @locale}, :method => :get %>
+					</li>
+			    <% else %>
+					<li class="year active">
+			        	<%= link_to "2011", {:controller => "yir", :action => "yir_plain", :year => 2011, :locale => @locale}, :method => :get %>
+					</li>
+			    <% end %>
+
+			    <% if @year != 2010 %>
+					<li class="year">
+			        	<%= link_to "2010", {:controller => "yir", :action => "yir_plain", :year => 2010, :locale => @locale}, :method => :get %>
+					</li>
+			    <% else %>
+					<li class="year active">
+			        	<%= link_to "2010", {:controller => "yir", :action => "yir_plain", :year => 2010, :locale => @locale}, :method => :get %>
+					</li>
+			    <% end %>
+
+			    <% if @year != 2009 %>
+					<li class="year">
+			        	<%= link_to "2009", {:controller => "yir", :action => "yir_plain", :year => 2009, :locale => @locale}, :method => :get %>
+					</li>
+			    <% else %>
+					<li class="year active">
+			        	<%= link_to "2009", {:controller => "yir", :action => "yir_plain", :year => 2009, :locale => @locale}, :method => :get %>
+					</li>
+			    <% end %>								
+				
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+
+
+	<div id="yir-container">
+		<div id="pages">
+			<ul>
+			    <% if @has_prev then %>
+			         <li><%= link_to I18n.t(:previous), {:controller => "yir", :action => "yir_plain", :locale => @locale, :year => @year, :page_num=>(@page_num - 1)}, :method => :get %></li>
+			    <% end %>
+			    <% if @has_next then %>
+			         <li><%= link_to I18n.t(:next), {:controller => "yir", :action => "yir_plain", :locale => @locale, :year => @year, :page_num=>(@page_num + 1)}, :method => :get %></li>
+			    <% end %>				
+			</ul>
+		</div> <!-- #pages -->
+
+        <% if (@num_job_changers != nil && @num_job_changers > 0) then %>
+            <%
+               idx = 0
+               @yir_users.each do |u|
+                   if (idx == 13) then
+             %>
+			<div class="breather3">
+				<table class="breather-content">
+					<tr>
+						<td class="line">
+                            <a title="See <%= u.first_name %>&#39;s profile" href="<%= u.profile_url %>&trk=eml-plat-b-pro_txt-yir_1">
+                                <%=t :see_job, :fname => u.short_name%>
+                            </a>							
+			            </td>
+						<td class="pointer">&#0187;</td>
+					</tr>
+				</table>
+			</div>
+            <div class="imageblock">
+                <a class="profile" title="See <%= u.first_name %>&#39;s profile" href="<%= u.profile_url %>&trk=eml-plat-b-pro_txt-yir_1">
+                    <img src="<%= u.pic_id %>"/>
+                </a>
+            </div>
+
+			<% elsif (idx == 33 or idx == 55) then %>
+			<div class="breather2">
+				<table class="breather-content">
+					<tr>
+						<td class="line">
+                            <a title="See <%= u.first_name %>&#39;s profile" href="<%= u.profile_url %>&trk=eml-plat-b-pro_txt-yir_1">
+                                <% if (idx == 33) then %>
+                                    <%=t :where_is, :fname => u.short_name%>
+                                <% else %>
+                                    <%=t :and_x, :fname => u.short_name%>
+                                <% end %>
+                            </a>							
+			            </td>
+						<td class="pointer">&#0187;</td>
+					</tr>
+				</table>
+			</div>
+            <div class="imageblock">
+                <a class="profile" title="See <%= u.first_name %>&#39;s profile" href="<%= u.profile_url %>&trk=eml-plat-b-pro_txt-yir_1">
+                    <img src="<%= u.pic_id %>"/>
+                </a>
+            </div>
+
+			<% else %>
+            <div class="imageblock">
+                <a class="profile" title="See <%= u.first_name %>&#39;s profile" href="<%= u.profile_url %>&trk=eml-plat-b-pro_txt-yir_1">
+                    <img src="<%= u.pic_id %>"/>
+                </a>
+            </div>
+            <% end
+				idx += 1
+            end %>
+        <% end %>
+
+		<div class="clearfix"></div>				
+	</div> <!-- #yir-container -->
+
+    <div id="sharing">
+        <div class="linkedin">
+            <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+            <script type="in/share" data-url="http://yir.linkedinlabs.com" data-counter="right"></script>
+        </div>
+        <div class="facebook">
+           <span class="st_facebook_hcount" st_title="LinkedIn Year in Review" st_url="http://yir.linkedinlabs.com/" displayText="http://yir.linkedinlabs.com"></span>
+         </div>
+       <div class="twitter">
+           <span class="st_twitter_hcount" st_title="LinkedIn Year in Review" st_url="http://yir.linkedinlabs.com/" displayText="http://yir.linkedinlabs.com"></span>
+       </div>
+    </div> <!-- #sharing -->
+
+	<p id="copyright">LinkedIn Corporation &copy; 2011</p>
+</body>

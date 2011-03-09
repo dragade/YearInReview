@@ -1,0 +1,168 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 14, ../../app/stylesheets/screen.scss */
+body {
+  font-size: 100%;
+}
+
+/* line 15, ../../app/stylesheets/screen.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 16, ../../app/stylesheets/screen.scss */
+h2 {
+  font-size: 1.875em;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+p {
+  font-size: 0.875em;
+}
+
+/* line 19, ../../app/stylesheets/screen.scss */
+.demo {
+  padding: 20px;
+  margin: 20px;
+}
+/* line 22, ../../app/stylesheets/screen.scss */
+.demo h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 10px 0 0;
+}
+/* line 27, ../../app/stylesheets/screen.scss */
+.demo p {
+  font-style: italic;
+  margin: 5px 0 15px;
+}
+
+/* line 33, ../../app/stylesheets/screen.scss */
+#hello-world {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(48.421%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #ffffff 46%, #efefef 95%);
+  background-image: linear-gradient(top, #ffffff 46%, #efefef 95%);
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  -o-border-radius: 5px / 5px;
+  -ms-border-radius: 5px / 5px;
+  -khtml-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  -moz-box-shadow: #888888 1px 1px 8px 0;
+  -webkit-box-shadow: #888888 1px 1px 8px 0;
+  -o-box-shadow: #888888 1px 1px 8px 0;
+  box-shadow: #888888 1px 1px 8px 0;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+/* line 43, ../../app/stylesheets/screen.scss */
+.icon-new {
+  background: url('/images/icon.png?1298150733') no-repeat;
+}
+
+/* line 46, ../../app/stylesheets/screen.scss */
+.icon-edit {
+  background: url('/images/icon.png?1298150733') 0 -16px no-repeat;
+}
+
+/* line 49, ../../app/stylesheets/screen.scss */
+.icon-save {
+  background: url('/images/icon.png?1298150733') 0 -32px no-repeat;
+}
+
+/* line 53, ../../app/stylesheets/screen.scss */
+.button {
+  padding-left: 20px;
+  margin: 10px;
+}
+
+/* line 58, ../../app/stylesheets/screen.scss */
+.profile {
+  margin: 10px;
+  width: 500px;
+  overflow: auto;
+}
+/* line 62, ../../app/stylesheets/screen.scss */
+.profile img {
+  float: left;
+}
+/* line 65, ../../app/stylesheets/screen.scss */
+.profile .details {
+  float: left;
+  margin-left: 15px;
+  padding-top: 20px;
+}
+/* line 69, ../../app/stylesheets/screen.scss */
+.profile .details .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 73, ../../app/stylesheets/screen.scss */
+.profile .details .headline {
+  color: #444;
+}

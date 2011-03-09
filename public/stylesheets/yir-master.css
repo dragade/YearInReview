@@ -1,0 +1,128 @@
+* {
+	margin: 			0;
+	padding:			0;
+}
+a img {
+	border:				0;
+}
+a:link,
+a:visited {
+	color:				#069;
+}
+a:hover {
+	text-decoration:	underline;
+}
+#content {
+	position: 			relative; 	
+	margin-top:			130px;
+	width:				100%;
+	font-size:			10pt;
+	background:			url(../images/bg_pixel90.png) repeat;
+}
+#inner {
+	width:				500px;
+	margin:				0 auto;
+	text-align:			center;	
+	padding-top:		40px;
+	padding-bottom:		30px;
+}
+.heading {
+	font-family:		Georgia, serif;
+	font-weight:		normal;
+	text-shadow:		0 2px 2px rgba(0, 0, 0, 0.2)
+}
+p.authenticate,
+p.copy {
+	color:				#333;
+	display:			inline-block;
+	font-family:		Arial;
+	font-size:			1.0em;
+	text-shadow:		0 1px 1px rgba(0, 0, 0, 0.1)
+}
+p.authenticate {
+	font-size:			1.1em;
+	font-weight:		bold;	
+}
+p.authenticate img {
+	vertical-align:		middle;
+}
+div.clearfix {
+	clear:				both;
+	height:				0;
+}
+
+
+/***** CSS3 Buttons */
+/* Using http://www.webdesignerwall.com/tutorials/css3-gradient-buttons/ */
+a.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	
+	font: 12px/100% Arial, Helvetica, sans-serif;
+	color:	#333;
+	font-weight: bold;
+	
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+a.button:hover {
+	text-decoration: none;
+}
+a.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.yellow {
+	color: #333;
+	border: solid 1px #E8B463;
+	background: #FFE86C;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFE976), to(#FFCF0B));
+	background: -moz-linear-gradient(top,  #FFE976,  #FFCF0B);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE976', endColorstr='#FFCF0B');
+}
+.yellow:hover {
+	border:	solid 1px #D29941;
+	background: #FFE86C;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F6C202), to(#F5DD61));
+	background: -moz-linear-gradient(top,  #F6C202,  #F5DD61);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#F6C202', endColorstr='#F5DD61');
+}
+
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+/***** Tipsy */
+.tipsy { padding: 5px; font-size: 11px; position: absolute; z-index: 100000; }
+.tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+.tipsy-arrow { position: absolute; background: url('../image/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }

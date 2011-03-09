@@ -1,0 +1,75 @@
+<body id="landing">
+	
+	<div id="language-selection">
+        <% if @locale == "en" then %>
+            <a href="/?locale=es"><b>Español</b></a>
+        <% else %>
+            <a href="/?locale=en"><b>English</b></a>
+        <% end %>
+    </div>    
+	
+	<div id="content">
+		<div id="inner">			
+			
+			<div id="app">
+				<h1>
+			        <% if @locale == "en" then %>
+			            <img src="/images/yirlogo2md.png" alt="LinkedIn Year in Review">						
+			        <% else %>
+			            <img src="/images/yirlogo2md_es.png" alt="LinkedIn Repaso del año">						
+			        <% end %>					
+				</h1>									
+				<p class="copy">
+					<%=t :copy%>
+				</p>
+                <% if @locale == "en" then %>
+                    <%= link_to image_tag("log-in-linkedin-large.png"), {:controller => "yir", :action => "yir_plain", :year => 2010, :locale => @locale} %>
+                <% else %>
+                    <%= link_to image_tag("log-in-linkedin-large-es.png"), {:controller => "yir", :action => "yir_plain", :year => 2010, :locale => @locale} %>
+                <% end %>
+
+			</div>
+
+            <div id="sharing">
+                <div class="linkedin">
+                    <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+                    <script type="in/share" data-url="http://yir.linkedinlabs.com" data-counter="right"></script>
+                </div>
+                 <div class="facebook">
+                    <span class="st_facebook_hcount" st_title="LinkedIn Year in Review" st_url="http://yir.linkedinlabs.com/" displayText="http://yir.linkedinlabs.com"></span>
+                  </div>
+                <div class="twitter">
+                    <span class="st_twitter_hcount" st_title="LinkedIn Year in Review" st_url="http://yir.linkedinlabs.com/" displayText="http://yir.linkedinlabs.com"></span>
+                </div>
+            </div> <!-- #sharing -->
+
+            <div id="plug">
+                <span class="quote heading"><%=t :quote_heading%></span>
+                <span class="source">
+                    <a href="http://management.fortune.cnn.com/2011/02/01/best-networking-email-linkedin/" target="_target"><%=t :read_more_on%></a>
+                    <img id="cnnlogo" src="/images/cnn_money_logo.gif">
+                </span>
+            </div>
+
+		</div> <!-- #inner -->
+	</div> <!-- #content -->
+
+	<div id="egg1bg"></div>
+	<div id="egg1">
+		<a id="wa" href="JavaScript:void(0);"><img id="w" src="/images/w.jpg"></a>
+	</div>
+
+	<div id="egg2bg"></div>
+	<div id="egg2">
+		<a id="ga" href="JavaScript:void(0);"><img id="g" src="/images/g.jpg"></a>
+	</div>
+
+	<div id="egg3bg"></div>
+	<div id="egg3">
+		<a id="ia" href="JavaScript:void(0);"><img id="i" src="/images/i.jpg"></a>
+	</div>
+
+	<div id="identity">
+		<img src="/images/whoweare.gif">
+	</div>
+</body>

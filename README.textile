@@ -1,0 +1,15 @@
+h2. Year in Review: the webapp
+
+This is a version of the Year in Review app running on linkedinlabs.
+
+It uses the LinkedIn developer APIs to show you your connections who started jobs in different years.
+
+h3. Instructions
+
+1. Install Ruby on Rails 3.0 on your computer: http://rubyonrails.org/download
+2. Get a LinkedIn developer key: https://www.linkedin.com/secure/developer
+3. Plug your consumer key and consumer secret into api_keys.rb
+4. cd yearInReview
+5. bundle install
+6. rails server
+7. In your browser: http://localhost:3000
